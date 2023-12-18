@@ -36,7 +36,8 @@ public class BoardController {
         if (id == null) {
             model.addAttribute("board", new Board());
         } else {
-            Board board = boardRepository.findById(id).orElse(null);
+            Board board = boardRepository.findById(id)
+                    .orElse(null);
             model.addAttribute("board", board);
         }
         return "board/form";

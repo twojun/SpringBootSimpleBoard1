@@ -14,10 +14,10 @@ public class Board {
     private Long id;
 
     @NotNull
-    @Size(min = 10, max = 70, message = "제목은 2 글자 이상 30 글자 이하로 작성해 주세요")
+    @Size(min = 10, max = 70, message = "제목은 10 글자 이상 70 글자 이하로 작성해 주세요")
     private String title;
 
     @NotNull
-    @Size(min = 10, max = 70)
+    @Size(min = 10, max = 70 ,message = "내용은 10 글자 이상 70 글자 이하로 작성해 주세요")
     private String content;
 }
