@@ -44,7 +44,7 @@ public class BoardApiController {
         return boardRepository.save(newBoard);
     }
 
-    @GetMapping("/boards/{id}")
+
     public Board findBoard(@PathVariable(name = "id") Long id) {
         return boardRepository.findById(id)
                 .orElse(null);
